@@ -1,0 +1,66 @@
+.page-form__programm {
+  min-height: 150px;
+  width: 100%;
+  background-color: @background-body;
+  border-top: 1px solid @border-nav;
+}
+
+.page-form__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @programm-span;
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.page-form__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @programm-span;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-form__programm {
+    min-height: 200px;
+    border: none;
+  }
+
+  .page-form__title {
+    font-size: 60px;
+    line-height: 62px;
+  }
+
+  .page-form__text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 66px;
+    padding-right: 309px;
+  }
+
+  .page-form__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form__programm {
+    min-height: 240px;
+  }
+
+  .page-form__wrapper {
+    width: 1220px;
+  }
+
+  .page-form__text {
+    padding-left: 25px;
+    padding-right: 822px;
+  }
+}

@@ -3,31 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>cat-energy</title>
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__block">
-      <a href="#" class="page-header__logo">
-        <img src="#" alt="">
-        <img src="#" alt="">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__img__logo" src="img/icon-logo-mobile.svg" alt="мобильный логотип">
+        <img class="page-header__img" src="img/logo-mobile-header.svg" alt="мобильный логотип">
       </a>
-      <button type="button" class="page-header__togle"></button>
+      <button type="button" class="page-header__togle">
+        <img class="page-header__togle__close" src="img/icon-close.svg" alt="иконка закрытия меню">
+      </button>
     </div>
     <nav class="main-nav">
       <h2 class="visually-hidden">меню навигации</h2>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html" aria-label="Главная">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html" aria-label="Каталог продукции">Каталог продукции</a>
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" aria-label="Подбор программы">Подбор программы</a>
+          <a class="main-nav__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -35,25 +37,26 @@
   <h1 class="visually-hidden">Лучшие программы для похудания котиков !!!</h1>
   <main>
     <section class="page-form">
+      <div class="page-form__wrapper">
       <div class="page-form__programm">
         <h2 class="page-form__title">Подбор программы</h2>
         <p class="page-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__block form__block--name">
-          <div class="form__wrapper__name">
-            <ul class="form__list form__list--name">
-              <li class="form__item form__item--name">
-                <label class="form__label form__label--name" for="name">Имя:*</label>
-                <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="Барсик">
+        <fieldset class="form__block form__block--text">
+          <div class="form__wrapper__text">
+            <ul class="form__list form__list--text">
+              <li class="form__item form__item--text">
+                <label class="form__label form__label--text" for="name">Имя:*</label>
+                <input class="form__input form__input--text" type="text" id="name" name="name" placeholder="Барсик">
               </li>
-              <li class="form__item form__item--name">
-                <label class="form__label form__label--name" for="weight">Вес (кг):*</label>
-                <input class="form__input form__input--name" type="text" id="weight" name="weight" placeholder="7">
+              <li class="form__item form__item--text">
+                <label class="form__label form__label--text form__label--weight" for="weight">Вес (кг):*</label>
+                <input class="form__input form__input--text" type="text" id="weight" name="weight" placeholder="7">
               </li>
-              <li class="form__item form__item--name">
-                <label class="form__label form__label--name" for="age">Возраст (лет):</label>
-                <input class="form__input form__input--name" type="text" id="age" name="age" placeholder="7" >
+              <li class="form__item form__item--text">
+                <label class="form__label form__label--text form__label--age" for="age">Возраст (лет):</label>
+                <input class="form__input form__input--text" type="text" id="age" name="age" placeholder="7" >
               </li>
             </ul>
           </div>
@@ -76,16 +79,16 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__bloсk form__bloсk--contacts">
+        <fieldset class="form__block form__bloсk--contacts">
           <div class="form__wrapper__contacts">
-            <h3 class="form__legend form__legend--contacts">Контактные данные(владельца кота)</h3>
+            <h3 class="form__legend form__legend--contacts">Контактные данные (владельца кота)</h3>
             <ul class="form__list form__list--contacts">
               <li class="form__item form__item--contacts">
-                <label class="form__label form__label--contacts" for="email">E-mail:*</label>
+                <label class="form__label form__label--contacts form__label--email" for="email">E-mail:*</label>
                 <input class="form__input form__input--contacts" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
               </li>
-              <li>
-                <label class="form__label form__label--contacts" for="phone">Телефон:*</label>
+              <li class="form__item form__item--contacts">
+                <label class="form__label form__label--contacts form__label--phone" for="phone">Телефон:*</label>
                 <input class="form__input form__input--contacts" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
@@ -127,31 +130,31 @@
       </form>
     </section>
     <section class="contact">
-      <div class="contact__block">
+      <div class="contact__block contact__block--form">
         <p class="contact__cooperation">приглашаем к сотрудничеству дилеров!</p>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <div class="contact__map"></div>
+      <div class="contact__map">
+        <iframe class="contact__iframe" src="https://yandex.ru/map-widget/v1/-/CCBh5R6U" width="100%" height="362" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
     </section>
+  </div>
 
   </main>
   <footer class="page-footer">
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
       <div class="page-footer__logo">
-        <img src="" alt="">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="лого сайта">
       </div>
       <div class="page-footer__social">
         <a href="" class="page-footer__link" aria-label="vkontakte">
           <img src="" alt="">
-          <span class="visually-hidden">vk</span>
         </a>
         <a href="" class="page-footer__link" aria-label="instagram">
           <img src="" alt="">
-          <span class="visually-hidden">instagram</span>
         </a>
         <a href="" class="page-footer__link" aria-label="facebook">
           <img src="" alt="">
-          <span class="visually-hidden">facebook</span>
         </a>
       </div>
       <div class="page-footer__block">

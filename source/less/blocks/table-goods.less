@@ -1,0 +1,37 @@
+.table-goods__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-goods__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: @advantage__text;
+  font-family: "Arial",sans-serif;
+}
+
+.table-goods {
+  width: 140px;
+}
+
+@media (min-width: @tablet-width) {
+  .table-goods {
+    width: 250px;
+  }
+
+  .table-goods__item {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .table-goods__list {
+    border-bottom: 1px solid @btn-catalog__hover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-goods {
+    width: 170px;
+  }
+}
