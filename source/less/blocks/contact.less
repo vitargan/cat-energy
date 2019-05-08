@@ -1,0 +1,106 @@
+.contact {
+  min-height: 470px;
+  width: 100%;
+  text-align: center;
+  background-color: @background-body;
+}
+
+.contact__cooperation {
+  color: @living-example__money;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  width: 218px;
+  margin-left: 20px;
+}
+
+.contact__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: @advantage__text;
+  font-family: "Arial",sans-serif;
+  font-weight: 400;
+  text-align: left;
+  width: 200px;
+}
+
+.contact__block {
+  display: flex;
+  min-height: 115px;
+  width: 100%;
+}
+
+.contact__block--catalog,
+.contact__block--form {
+  background-color: @background-contact__catalog;
+}
+
+.contact__cooperation__br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contact{
+    min-height: 598px;
+  }
+
+  .contact__cooperation {
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 68px;
+    margin-right: auto;
+  }
+
+  .contact__block {
+    display: flex;
+    min-height: 200px;
+  }
+
+  .contact__address {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 70px;
+    text-align: right;
+    width: 185px;
+  }
+
+  .contact__cooperation__br {
+    display: block;
+  }
+
+  .contact__iframe {
+    min-height: 396px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact{
+    min-height: 402px;
+    position: relative;
+  }
+
+  .contact__block {
+    width: 570px;
+    min-height: 200px;
+    position: absolute;
+    z-index: 2;
+    background-color: @background-body;
+    top: 100px;;
+    left: 40px;
+  }
+
+  .contact__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1300px;
+  }
+
+  .contact__iframe {
+    min-height: 403px;
+    width: 100%;
+    position: relative;
+  }
+}
