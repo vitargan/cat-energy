@@ -15,16 +15,20 @@
   margin-left: auto;
   margin-right: auto;
   width: 280px;
+  margin-top: 25px;
+  margin-bottom: 34px;
 
   &::after {
     content: "";
     position: absolute;
+    top: 0;
+    width: 19vw;
+    height: 3px;
+    margin-top: calc(1em/2 + 3px);
+    background-color: #68b738;
+    z-index: -1;
     display: block;
-    width: 40px;
-    height: 2px;
-    bottom: 8px;
-    right: -5px;
-    background-color: #a4d488;
+    left: 247px;
   }
 }
 
@@ -48,8 +52,8 @@
     width: 55px;
     height: 60px;
     background-size: 55px 60px;
-    top: 120px;
-    right: 130px;
+    top: 104px;
+    right: 132px;
   }
 }
 
@@ -60,9 +64,9 @@
   color: @color-white;
   font-family: "Arial",sans-serif;
   width: 180px;
-  margin-left: 61px;
-  margin-bottom: 0px;
-  margin-top: 163px;
+  margin-bottom: 0;
+  margin-top: 151px;
+  margin-left: 69px;
   text-align: center;
 }
 
@@ -74,41 +78,61 @@
   .additional-goods__title {
     font-size: 36px;
     line-height: 38px;
-    width: 400px;
+    width: 708px;
     margin: 0;
-    margin-left: 66px;
+    padding-left: 63px;
+    margin-top: 63px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 5vw;
+      height: 3px;
+      margin-top: calc(1em/2 + 3px);
+      background-color: #68b738;
+      z-index: -1;
+      left: -12px;
+    }
 
     &::after {
-      width: 320px;
-      left: 367px;
-      bottom: 12px;
+      left: 442px;
+      width: 42vw;
     }
   }
 
   .additional-goods__gift {
     min-height: 345px;
-    width: 768px;
+    width: 708px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: 708px 200px;
+    background-position: 0;
 
     &::before {
-      left: 111px;
-      top: 150px;
+      left: 92px;
+      top: 137px
     }
   }
 
   .additional-goods__text {
     text-align: left;
-    margin-left: 434px;
-    margin-top: 20px;
+    margin-left: 424px;
+    margin-top: 0;
+  }
+
+  .additional-goods__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 708px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional-goods {
-    min-height: 500px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    min-height: 566px;
+    flex-direction: column;
   }
 
   .additional-goods__gift {
@@ -119,26 +143,42 @@
     background-size: 245px 289px;
     background-position: 0;
     margin: 0;
+    margin-top: 80px;
 
     &::before {
-      left: 89px;
-      top: 57px;
+      left: 93px;
+      top: 65px;
     }
   }
 
   .additional-goods__wrapper {
-    width: 895px;
-    height: 289px;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .additional-goods__text {
-    margin-left: 25px;
-    margin-top: 150px;
+    margin-top: 145px;
+    margin-left: 32px;
     text-align: center;
   }
 
   .additional-goods__title {
-    width: 100%;
+    width: 1220px;
     height: 38px;
+    margin-top: 74px;
+    padding-left: 0;
+
+    &::before {
+      z-index: -1;
+      width: 20vw;
+      display: block;
+      left: -410px;
+    }
+
+    &::after {
+      left: 372px;
+      width: 61.5vw;
+    }
   }
 }

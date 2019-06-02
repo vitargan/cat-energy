@@ -34,6 +34,10 @@
   margin-left: 21px;
 }
 
+.page-header__img__tablet {
+  display: none;
+}
+
 .page-header__img {
   width: 101px;
   height: 18px;
@@ -55,7 +59,6 @@
   width: 18px;
   height: 18px;
   margin-top: 24px;
-
 }
 
 .page-header__title {
@@ -63,10 +66,11 @@
   padding: 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: 38px;
+  line-height: 33px;
   color: @color-white;
   padding-top: 30px;
   box-sizing: border-box;
+  height: 110px;
 }
 
 .page-header__program-selection {
@@ -86,6 +90,7 @@
   margin-right: auto;
   width: 280px;
   height: 270px;
+  top: 165px;
 }
 
 .page-header__slogan {
@@ -95,6 +100,7 @@
   color: @color-white;
   text-transform: uppercase;
   position: relative;
+  margin-top: 14px;
 }
 
 .page-header__btn {
@@ -130,6 +136,7 @@
     min-height: 950px;
     display: flex;
     flex-direction: column;
+    background-color: transparent;
   }
 
   .page-header__wrapper {
@@ -137,6 +144,22 @@
     margin-right: auto;
     min-width: @tablet-width;
     position: relative;
+  }
+
+  .page-header__img__logo {
+    display: none;
+  }
+
+  .page-header__img {
+    display: none;
+  }
+
+  .page-header__img__tablet {
+    display: block;
+    width: 173px;
+    height: 58px;
+    margin-top: 25px;
+    margin-left: 30px;
   }
 
   .page-header__togle {
@@ -152,6 +175,8 @@
     font-size: 60px;
     line-height: 62px;
     color: @color-black;
+    padding-top: 56px;
+    padding-right: 144px;
   }
 
   .page-header__slogan {
@@ -159,14 +184,16 @@
     font-size: 20px;
     line-height: 22px;
     color: @color-black;
+    margin-top: 107px;
   }
 
   .page-header__program-selection {
     background-image: none;
-    background-color: @background-body;
+    background-color: transparent;
     text-align: left;
-    width: 460px;
-    margin-left: 120px;
+    width: 709px;
+    padding-left: 120px;
+    box-sizing: border-box;
   }
 
   .page-header__btn {
@@ -175,7 +202,15 @@
     text-align: center;
     font-size: 20px;
     line-height: 22px;
-    margin-top: 100px;
+    margin-top: 21px;
+  }
+
+  .page-header__logo__program-selection {
+    width: 699px;
+    height: 609px;
+    left: 37px;
+    top: 258px;
+    z-index: -1;
   }
 }
 
@@ -193,6 +228,8 @@
       display: block;
       background-image: url("../img/index-background-desktop@1x.jpg");
       width: 50%;
+      background-position: 37px 0;
+      background-color: #5eaa2f;
       height: 696px;
       background-repeat: no-repeat;
       position: absolute;
@@ -201,11 +238,35 @@
     }
   }
 
+  .page-header__img__tablet {
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
+    margin-left: 0;
+  }
+
   .page-header__block {
     width: 245px;
   }
 
   .page-header__wrapper {
     min-width: 1220px;
+  }
+
+  .page-header__program-selection {
+    padding-left: 81px;
+    padding-top: 55px;
+  }
+
+  .page-header__logo__program-selection {
+    width: 552px;
+    height: 499px;
+    left: 450px;
+    top: 29px;
+    z-index: 1;
+  }
+
+  .page-header__btn {
+    padding-top: 17px;
   }
 }
