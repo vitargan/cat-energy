@@ -163,18 +163,18 @@
 }
 
 .form__legend--contacts {
-  width: 280px;
+  width: 200px;
   margin-left: 20px;
+  background-color: @color-white;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
     display: block;
-    width: 29vw;
+    width: calc(100vw - 40px);
     height: 3px;
-    bottom: 33px;
-    right: -18px;
+    top: 17px;
     background-color: #a4d488;
     z-index: -1;
   }
@@ -241,7 +241,6 @@
   &:active {
     fill: #a4d488;
   }
-
 }
 
 .form__label--email {
@@ -271,16 +270,17 @@
 .form__legend--textarea {
   margin-top: 9px;
   margin-bottom: 36px;
+  background-color: @color-white;
+  width: 142px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
     display: block;
-    width: 44vw;
+    width: calc(100vw - 40px);
     height: 3px;
-    bottom: 7px;
-    right: -17px;
+    top: 15px;
     background-color: #a4d488;
     z-index: -1;
   }
@@ -319,27 +319,16 @@
   margin-top: 18px;
   margin-bottom: 34px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    width: 9vw;
-    height: 3px;
-    margin-top: calc(1em/2 + 3px);
-    background-color: #68b738;
-    z-index: -1;
-    left: -110px;
-  }
+  background-color: @color-white;
+  width: 165px;
 
   &::after {
     content: "";
     position: absolute;
     display: block;
-    width: 44vw;
+    width: calc(100vw - 40px);
     height: 3px;
     bottom: 7px;
-    right: -17px;
     background-color: #a4d488;
     z-index: -1;
   }
@@ -531,21 +520,20 @@
     margin-left: 40px;
 
     &::after {
-      bottom: 13px;
-      right: -147px;
-      width: 20vw;
+      top: 24px;
+      width: calc(100vw - 110px);
     }
 
     &::before {
       content: "";
       position: absolute;
-      top: 3px;
-      width: 9vw;
+      top: 24px;
+      width: 100vw;
       height: 3px;
-      margin-top: calc(1em/2 + 3px);
+      right: 100%;
       background-color: #68b738;
       z-index: -1;
-      left: -110px;
+      margin-right: 37px;
     }
   }
 
@@ -572,23 +560,23 @@
     line-height: 38px;
     margin-top: 58px;
     margin-left: 24px;
+    width: 215px;
 
     &:after {
-      right: -77px;
-      width: 60vw;
-      bottom: 10px;
+      top: 24px;
+      width: calc(100vw - 110px);
     }
 
     &::before {
       content: "";
       position: absolute;
-      top: 3px;
-      width: 9vw;
+      top: 24px;
+      width: 100vw;
       height: 3px;
-      margin-top: calc(1em/2 + 3px);
+      right: 100%;
       background-color: #68b738;
       z-index: -1;
-      left: -110px;
+      margin-right: 37px;
     }
   }
 
@@ -614,29 +602,29 @@
     line-height: 38px;
     margin-top: 61px;
     margin-left: 41px;
+    width: 251px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 3px;
-      width: 9vw;
+      top: 24px;
+      width: 100vw;
       height: 3px;
-      margin-top: calc(1em/2 + 3px);
+      right: 100%;
       background-color: #68b738;
       z-index: -1;
-      left: -110px;
+      margin-right: 37px;
     }
 
     &::after {
       content: "";
       position: absolute;
       display: block;
-      width: 56vw;
       height: 3px;
-      bottom: 12px;
-      right: -22px;
+      top: 24px;
       background-color: #a4d488;
       z-index: -1;
+      width: calc(100vw - 110px);
     }
   }
 
@@ -741,8 +729,8 @@
     margin-top: 51px;
     margin-left: 0;
 
-    &::before {
-      left: -176px;
+    &::after {
+      width: calc(100vw - 360px);
     }
   }
 
@@ -791,10 +779,18 @@
   .form__legend--textarea {
     margin-left: 0px;
     margin-top: 51px;
+
+    &::after {
+      width: calc(100vw - 360px);
+    }
   }
 
   .form__legend--checkbox {
     margin-left: 0;
+
+    &::after {
+      width: calc(100vw - 360px);
+    }
   }
 
   .form__block--checkbox {
@@ -804,6 +800,7 @@
 
   .form__item--checkbox {
     width: 245px;
+    height: 60px;
   }
 
   .form__label--checkbox {
@@ -813,6 +810,7 @@
   .form__list--checkbox{
     width: 1220px;
     margin-left: 4px;
+    height: 60px;
   }
 
   .form__text {
@@ -827,6 +825,7 @@
     margin-right: 80px;
     margin-left: 0;
     margin-top: 0;
+    z-index: 1;
   }
 
   .form__span {
