@@ -5,6 +5,12 @@
   border-top: 1px solid @border-nav;
 }
 
+.page-form__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
 .page-form__title {
   font-weight: 400;
   font-size: 36px;
@@ -13,6 +19,7 @@
   text-align: left;
   margin: 0;
   padding-left: 20px;
+  margin-top: 22px;
 }
 
 .page-form__text {
@@ -23,24 +30,29 @@
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 40px;
+  margin-top: 36px;
 }
 
 @media (min-width: @tablet-width) {
   .page-form__programm {
     min-height: 200px;
     border: none;
+    width: 708px;
   }
 
   .page-form__title {
     font-size: 60px;
     line-height: 62px;
+    padding-left: 0;
+    margin-top: 38px;
   }
 
   .page-form__text {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 66px;
     padding-right: 309px;
+    margin-top: 56px;
+    padding-left: 41px;
   }
 
   .page-form__wrapper {
@@ -52,7 +64,11 @@
 
 @media (min-width: @desktop-width) {
   .page-form__programm {
-    min-height: 240px;
+    min-height: 185px;
+  }
+
+  .page-form__title {
+    margin-top: 75px;
   }
 
   .page-form__wrapper {
@@ -60,7 +76,7 @@
   }
 
   .page-form__text {
-    padding-left: 25px;
-    padding-right: 822px;
+    padding-left: 0;
+    padding-right: 360px;
   }
 }

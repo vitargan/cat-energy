@@ -9,20 +9,149 @@
 
 .page-footer__social {
   display: flex;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  width: 280px;
+  height: 63px;
+  margin-top: 26px;
+  justify-content: space-around;
+  padding-top: 21px;
+  padding-right: 61px;
+  padding-left: 53px;
+  box-sizing: border-box;
+}
+
+.page-footer__img {
+  fill: #666;
+
+  &:hover {
+    fill: @color-btn_goods;
+  }
+
+  &:active {
+    opacity: 0.6
+  }
 }
 
 .page-footer__block {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 22px;
+}
+
+.page-footer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  fill: #666;
+
+  &:hover {
+    fill: @color-btn_goods;
+  }
+
+  &:active {
+    opacity: 0.6
+  }
+}
+
+.page-footer__logo {
+  margin-top: 37px;
+  margin-left: 75px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6
+  }
+}
+
+.page-footer__logo__img {
+  width: 128px;
+  height: 24px;
+}
+
+.page-footer__text {
+  font-size: 16px;
+  line-height: 16px;
+  color: @programm-text;
+  font-family: "Arial",sans-serif;
+  margin-top: 9px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     min-height: 150px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin-left: 31px;
+    margin-top: 31px;
   }
 
   .page-footer__social {
     justify-content: space-between;
+    border: none;
+    padding-left: 88px;
+    padding-right: 71px;
+    padding-top: 5px;
+  }
+
+  .page-footer__img--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .page-footer__img--insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .page-footer__img--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .page-footer__block {
+    width: 162px;
+    margin-left: 0;
+    margin-right: 25px;
+    margin-top: 26px;
+  }
+
+  .page-footer__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-footer__wrapper {
+    width: @tablet-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: @desktop-width;
+  }
+
+  .page-footer__logo {
+    margin-left: 40px;
+  }
+
+  .page-footer__social {
+    padding-top: 2px;
+  }
+
+  .page-footer__block {
+    margin-right: 41px;
   }
 }

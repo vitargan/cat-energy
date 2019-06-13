@@ -3,7 +3,7 @@
   width: 100%;
   background-color: @background-programm;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 8px;
   box-sizing: border-box;
 }
 
@@ -31,6 +31,35 @@
   color: @programm-span;
 }
 
+.programm__span--slim {
+  margin-left: 8px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @color-btn_goods;
+    top: -5px;
+    left: -66px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    top: -9px;
+    left: -60px;
+  }
+}
+
 .programm__text {
   font-weight: 400;
   font-size: 14px;
@@ -38,6 +67,8 @@
   color: @programm-text;
   font-family: "Arial",sans-serif;
   width: 100%;
+  text-align: left;
+  margin-top: 33px;
 }
 
 .programm__link {
@@ -46,12 +77,73 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @programm-span;
+  display: block;
+  margin-top: 40px;
+  text-align: left;
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 23px;
+    height: 10px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 97px;
+    transition: all .3s ease;
+  }
+}
+
+.programm__link:hover::after {
+  width: 35px;
+  height: 15px;
+  top: 3px;
+}
+
+.programm__link:active::after {
+  opacity: 0.3;
+}
+
+.programm__span--pro {
+  margin-left: 37px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @color-btn_goods;
+    top: -5px;
+    left: -66px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 65px;
+    height: 50px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    top: 6px;
+    left: -76px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .programm {
     min-height: 370px;
     text-align: left;
+    width: 705px;
   }
 
   .programm__span {
@@ -59,14 +151,56 @@
     line-height: 37px;
   }
 
+  .programm__span--slim {
+    &::before {
+      width: 200px;
+      height:200px;
+      left: 391px;
+      top: 23px;
+    }
+
+    &::after {
+      width: 139px;
+      height: 193px;
+      top: 15px;
+      left: 422px;
+    }
+  }
+
+  .programm__span--pro {
+    margin-left: 0;
+    margin-top: 20px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: 397px;
+      top: 23px;
+    }
+
+    &::after {
+      width: 266px;
+      height: 133px;
+      left: 364px;
+      top: 66px;
+    }
+  }
+
   .programm__text {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 22px;
   }
 
   .programm__link {
     font-size: 20px;
     line-height: 22px;
+    margin-top: 56px;
+    margin-left: 5px;
+
+    &::after {
+      left: 129px;
+    }
   }
 
   .programm--pro {
@@ -74,13 +208,15 @@
   }
 
   .programm__block--slim {
-    padding-left: 50px;
-    padding-right: 263px;
+    padding-right: 284px;
+    padding-top: 68px;
+    padding-left: 47px;
   }
 
   .programm__block--pro {
     padding-left: 50px;
-    padding-right: 300px;
+    padding-right: 316px;
+    padding-top: 71px;
   }
 }
 
@@ -92,6 +228,11 @@
     margin-top: 80px;
   }
 
+  .programm__span {
+    text-align: center;
+    margin-left: 140px;
+  }
+
   .programm--slim {
     width: 570px;
     margin-right: 80px;
@@ -99,16 +240,57 @@
     margin-top: 80px;
   }
 
+  .programm__span--slim {
+    margin-left: 161px;
+
+    &::before {
+      left: -159px;
+      width: 100px;
+      height: 100px;
+      top: -21px;
+    }
+
+    &::after {
+      height: 100px;
+      left: -147px;
+      width: 100px;
+      top: -30px;
+    }
+  }
+
   .programm__block--slim {
     padding-right: 40px;
+    padding-left: 51px;
   }
 
   .programm__block--pro {
     padding-right: 40px;
   }
 
-  .programm__span {
-    text-align: center;
-    margin-left: 140px;
+  .programm__span--pro {
+    margin-left: 161px;
+
+    &::before {
+      left: -159px;
+      width: 100px;
+      height: 100px;
+      top: -21px;
+    }
+
+    &::after {
+      height: 100px;
+      left: -175px;
+      width: 134px;
+      top: -4px;
+    }
+  }
+
+  .programm__link {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .programm__text {
+    margin-top: 70px;
   }
 }
