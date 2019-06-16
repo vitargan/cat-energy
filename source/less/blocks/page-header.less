@@ -69,6 +69,8 @@
   line-height: 33px;
   color: @color-white;
   padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   box-sizing: border-box;
   height: 110px;
 }
@@ -82,6 +84,13 @@
   position: relative;
   background-color: @background-program-selection;
   position: relative;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to top,#fff 195px,transparent 175px);
+    background-size: 86% 307px;
+    background-position: 28px 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-header__logo__program-selection {
@@ -176,6 +185,7 @@
     line-height: 62px;
     color: @color-black;
     padding-top: 56px;
+    padding-left: 0;
     padding-right: 144px;
   }
 
@@ -235,6 +245,11 @@
       position: absolute;
       right: 0;
       bottom: 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: contain;
+      }
     }
   }
 
