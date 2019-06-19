@@ -65,9 +65,13 @@
         <h2 class="page-header__title">Функциональное питание для котов</h2>
         <h4 class="page-header__slogan">Занялся собой? Займись котом!</h4>
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="page-header__logo__program-selection" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Корм для кошек Cat Energy Pro">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp"  media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@1x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@1x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@1x.jpg 2x">
+          <img class="page-header__logo__program-selection" src="img/index-can-mobile@1x.png"  alt="Корм для кошек Cat Energy Pro" srcset="img/index-can-mobile@2x.png 2x">
         </picture>
         <a class="page-header__btn" href="form.html">Подобрать программу</a>
       </div>
